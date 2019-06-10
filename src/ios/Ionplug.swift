@@ -15,9 +15,9 @@ import UIKit
         // let y:Int = command.arguments![1] as! Int; // Change this accordingly.
 
         // Whatever your plugin does after startup goes here.
-        print('Ionplug ran correctly!');
-        print('Thank you for using the Ionic-Plugin-Assistant');
-        print('Written by Jordan Benge @Bengejd');
+        print("Ionplug ran correctly!");
+        print("Thank you for using the Ionic-Plugin-Assistant");
+        print("Written by Jordan Benge @Bengejd");
 
         // We did the stuff, and now we're finished. Set the status as OK.
         pluginResult = CDVPluginResult(status: CDVCommandStatus_OK);
