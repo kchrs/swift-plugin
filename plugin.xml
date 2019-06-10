@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="ionplug" version="0.0.1"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Ionplug</name>
+
+    <js-module name="Ionplug" src="www/Ionplug.js">
+        <clobbers target="Ionplug" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+
+        <!--
+        Add in any class declaration names here so that they can be accessed by Cordova. Else the plugin will fail.
+        -->
+
+            <feature name="Ionplug">
+                <param name="ios-package" value="Ionplug" />
+            </feature>
+
+        </config-file>
+
+        <!-- Add in the plugin .swift files here -->
+        <source-file src="src/ios/Ionplug.swift" />
+
+        <!-- Add in the swift-support plugin by default -->
+        <dependency id="cordova-plugin-add-swift-support" version="2.0.2"/>
+    </platform>
+</plugin>

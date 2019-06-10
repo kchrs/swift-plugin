@@ -1,0 +1,28 @@
+{
+  "name": "Ionplug",
+  "version": "0.0.1",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "REPO"
+  },
+  "cordova": {
+    "id": "ionplug",
+    "platforms": [
+      "iOS"
+    ]
+  },
+  "keywords": [
+    "Ionplug",
+    "ionic-Ionplug",
+    "cordova Ionplug",
+    "cordova",
+    "phonegap",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "ios",
+    "ionic"
+  ],
+  "author": "kchrs",
+  "license": "MIT"
+}
