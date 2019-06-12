@@ -19,6 +19,14 @@ import UIKit
         print("Thank you for using the Ionic-Plugin-Assistant");
         print("Written by Jordan Benge @Bengejd");
 
+
+        let alert = UIAlertController(title: "Did you bring your toy?", message: "It's recommended you bring your toy before continuing.", preferredStyle: .alert)
+
+alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
+alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+
+self.present(alert, animated: true)
+
         // We did the stuff, and now we're finished. Set the status as OK.
         pluginResult = CDVPluginResult(status: CDVCommandStatus_OK);
         self.commandDelegate!.send(pluginResult, callbackId: command.callbackId);
